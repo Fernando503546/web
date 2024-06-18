@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion de la empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #FFC0CB; /* Fondo rosa */
+        }
+        .navbar {
+            background-color: #333;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            margin-top: 60px; /* Para evitar que el contenido se esconda detrás de la navbar */
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #FF0000; /* Botón rojo */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #AA0000; /* Rojo más oscuro al pasar el cursor */
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.add('hidden');
+            }
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" onclick="showSection('presentación')">Presantación</a>
+        <a href="#" onclick="showSection('mision')">Misión</a>
+        <a href="#" onclick="showSection('vision')">Visión</a>
+        <a href="#" onclick="showSection('filosofia')">Filosofía</a>
+        <a href="#" onclick="showSection('objetivo')">Objetivo</a>
+    </div>
+    
+    <div class="content">
+        <div id="presentación" class="section">
+            <h2>Presentación</h2>
+            <p>"KittyGomitas" es una empresa especializada en la fabricación y distribución de gomitas enchiladas, que combina la dulzura característica de las golosinas con un toque de picante. Fundada con la visión de ofrecer una experiencia única para los amantes de los sabores audaces, la empresa se destaca por su amplia variedad de sabores y formas, desde clásicas gomitas de ositos hasta formas más creativas y divertidas.
+
+La marca se esfuerza por mantener altos estándares de calidad en sus productos, utilizando ingredientes frescos y de primera calidad para garantizar un sabor delicioso y consistente en cada bocado.</p>
+        </div>
+        <div id="mision" class="section hidden">
+            <h2>Misión</h2>
+            <p>Tener variedad de productos y que nuestra sucursal/empresa se mas conocida.</p>
+        </div>
+        <div id="vision" class="section hidden">
+            <h2>Visión</h2>
+            <p>Expansión de sucursales y tener socios grandes dónde el crecimiento sea mutuo, agrandar nuestro inventario de productos, tener revendedores de nuestro productos.</p>
+        </div>
+        <div id="filosofia" class="section hidden">
+            <h2>Filosofía</h2>
+            <p>Nuestra principal prioridad es mejorar y las expectativas de nuestros clientes.</p>
+        </div>
+        <div id="objetivo" class="section hidden">
+            <h2>Objetivo</h2>
+            <p>Maximizar la rentabilidad de la empresa en 2 meses.Desarrollar un estructura de liderazgo para garantizar la sostenibilidad y la responsabilidad y establecer una presencia de control de gestión para racionalizar el trabajo de la organización.</p>
+        </div>
+        <div class="button-container">
+            <button onclick="location.href='file:///C:/Users/Fernando/Documents/ferreteria%20elote/Dulceria%20kitty.html'">Regresar</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
